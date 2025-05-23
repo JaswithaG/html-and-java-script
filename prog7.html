@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script>
+             function a(){
+                var x=parseInt(document.getElementById("myinput1").value);
+                for(var i=0;i<x;i++){
+                   document.write(i);
+                   if(i%2==0){
+                      document.write(" is even");
+                   }
+                   else{
+                      document.write(" is odd");
+                   }
+                }
+             }
+        </script>
+    </head>
+    <body>
+        Enter number to show the output:<input type="text" id="myinput1" placeholder="Enter a number"><br>
+        <button onclick="a()">Run</button>
+        <p id="myinput1"></p>
+    </body>
+</html>

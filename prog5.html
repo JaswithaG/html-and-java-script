@@ -1,0 +1,25 @@
+// generate prime numbers based upon the users input
+<html>
+    <head>
+        <script>
+              function generatePrime() {
+                var num = document.getElementById("num").value;
+                var primes = [];
+                for (var i = 2; primes.length < num; i++) {
+                    if (isPrime(i)) {
+                        primes.push(i);
+                    }
+                }
+                document.getElementById("primeDisplay").innerHTML = "First " + num + " prime numbers: " + primes.join(", ");
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Prime Numbers</h1>
+        <label for="num">Enter a number:</label><br>
+        <input type="text" id="num"><br>
+        <button onclick="generatePrime()">Generate Primes</button>
+        <h2 id="primeDisplay"></h2>
+
+    </body>
+</html>

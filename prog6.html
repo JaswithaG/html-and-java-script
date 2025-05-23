@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script>
+            function a(){
+                var x=document.getElementById("myinput1").value;
+                var y=document.getElementById("myinput2").value;
+                if(x=="" || y==""){
+                    alert("Please enter both values");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Prime num</h1>
+        <label for="num">Enter a number:</label><br>
+        <input type="text" id="num"><br>
+        <button onclick="a()">Generate Primes</button>
+        <h2 id="primeDisplay"></h2>
+        
+    </body>
+</html>
